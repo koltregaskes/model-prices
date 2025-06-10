@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Pricing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        td {
+            background-color: #ecf0f1;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Model Pricing</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Input Tokens (per million)</th>
+                    <th>Output Tokens (per million)</th>
+                    <th>Context Window</th>
+                    <th>Release Date</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>o3</td>
+                    <td>$2.00</td>
+                    <td>$8.00</td>
+                    <td>128K</td>
+                    <td>April 2025</td>
+                    <td>80% price drop announced by Sam Altman (<a href="https://dev.ua/en/news/prais-drop-o3-1749565143">dev.ua</a>)</td>
+                </tr>
+                <tr>
+                    <td>o3-mini</td>
+                    <td>$0.15</td>
+                    <td>$0.60</td>
+                    <td>128K</td>
+                    <td>January 2025</td>
+                    <td>Compact, efficient reasoning model (<a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/">azure.microsoft.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>o4-mini</td>
+                    <td>$0.15</td>
+                    <td>$0.60</td>
+                    <td>128K</td>
+                    <td>April 2025</td>
+                    <td>Optimized for lower latency and lighter compute requirements (<a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/">azure.microsoft.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>GPT-4o</td>
+                    <td>$2.50</td>
+                    <td>$10.00</td>
+                    <td>128K</td>
+                    <td>May 2024</td>
+                    <td>Multimodal capabilities (text, image, audio) (<a href="https://en.wikipedia.org/wiki/GPT-4o">en.wikipedia.org</a>)</td>
+                </tr>
+                <tr>
+                    <td>GPT-4o Mini</td>
+                    <td>$0.15</td>
+                    <td>$0.60</td>
+                    <td>16K</td>
+                    <td>July 2024</td>
+                    <td>Smaller, cheaper version of GPT-4o (<a href="https://en.wikipedia.org/wiki/GPT-4o">en.wikipedia.org</a>)</td>
+                </tr>
+                <tr>
+                    <td>GPT-4</td>
+                    <td>$30.00</td>
+                    <td>$60.00</td>
+                    <td>32K</td>
+                    <td>March 2023</td>
+                    <td>High-performance model for complex tasks (<a href="https://help.openai.com/en/articles/7127956-how-much-does-gpt-4-cost">help.openai.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>GPT-4 Turbo</td>
+                    <td>$10.00</td>
+                    <td>$30.00</td>
+                    <td>32K</td>
+                    <td>November 2023</td>
+                    <td>Faster and more cost-effective than GPT-4 (<a href="https://www.nebuly.com/blog/openai-gpt-4-api-pricing">nebuly.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>GPT-4.5</td>
+                    <td>$75.00</td>
+                    <td>$150.00</td>
+                    <td>128K</td>
+                    <td>February 2025</td>
+                    <td>High-cost, high-performance model (<a href="https://en.wikipedia.org/wiki/GPT-4.5">en.wikipedia.org</a>)</td>
+                </tr>
+                <tr>
+                    <td>GPT-3.5 Turbo</td>
+                    <td>$3.00</td>
+                    <td>$6.00</td>
+                    <td>4K</td>
+                    <td>2023</td>
+                    <td>Legacy model with lower performance (<a href="https://www.analyticsvidhya.com/blog/2024/12/openai-api-cost/">analyticsvidhya.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>Claude 3.7 Sonnet</td>
+                    <td>$3.00</td>
+                    <td>$15.00</td>
+                    <td>200K</td>
+                    <td>February 2025</td>
+                    <td>Hybrid reasoning model for complex tasks (<a href="https://www.reuters.com/technology/artificial-intelligence/anthropic-launches-advanced-ai-hybrid-reasoning-model-2025-02-24/">reuters.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>Claude 3.5 Sonnet</td>
+                    <td>$3.00</td>
+                    <td>$15.00</td>
+                    <td>200K</td>
+                    <td>November 2024</td>
+                    <td>Reliable model for various tasks (<a href="https://tech.co/news/how-much-does-claude-ai-cost">tech.co</a>)</td>
+                </tr>
+                <tr>
+                    <td>Claude 3 Opus</td>
+                    <td>$15.00</td>
+                    <td>$75.00</td>
+                    <td>200K</td>
+                    <td>March 2024</td>
+                    <td>Advanced model for deep analysis (<a href="https://www.reuters.com/technology/artificial-intelligence/anthropic-releases-more-powerful-claude-3-ai-tech-race-continues-2024-03-04/">reuters.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>Claude 3 Haiku</td>
+                    <td>$0.25</td>
+                    <td>$1.25</td>
+                    <td>200K</td>
+                    <td>July 2024</td>
+                    <td>Fast and cost-effective model for lightweight tasks (<a href="https://teamai.com/blog/large-language-models/understanding-different-claude-models/">teamai.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>Grok 3 Standard</td>
+                    <td>$3.00</td>
+                    <td>$15.00</td>
+                    <td>131K</td>
+                    <td>April 2025</td>
+                    <td>Real-time data integration from X platform (<a href="https://techcrunch.com/2025/04/09/elon-musks-ai-company-xai-launches-an-api-for-grok-3/">techcrunch.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>Grok 3 Fast</td>
+                    <td>$5.00</td>
+                    <td>$25.00</td>
+                    <td>131K</td>
+                    <td>April 2025</td>
+                    <td>Premium version for faster responses (<a href="https://techcrunch.com/2025/04/09/elon-musks-ai-company-xai-launches-an-api-for-grok-3/">techcrunch.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>Grok 3 Mini</td>
+                    <td>$0.30</td>
+                    <td>$0.50</td>
+                    <td>131K</td>
+                    <td>April 2025</td>
+                    <td>Lightweight model for basic tasks (<a href="https://techcrunch.com/2025/04/09/elon-musks-ai-company-xai-launches-an-api-for-grok-3/">techcrunch.com</a>)</td>
+                </tr>
+                <tr>
+                    <td>LLaMA 3.3 70B</td>
+                    <td>$0.58</td>
+                    <td>$0.70</td>
+                    <td>8K</td>
+                    <td>March 2025</td>
+                    <td>Cost-effective model for general tasks (<a href="https://artificialanalysis.ai/models/llama-3-3-instruct-70b">artificialanalysis.ai</a>)</td>
+                </tr>
+                <tr>
+                    <td>LLaMA 3.2 70B</td>
+                    <td>$0.59</td>
+                    <td>$0.79</td>
+                    <td>8K</td>
+                    <td>February 2025</td>
+                    <td>Balanced performance and cost (<a href="https://artificialanalysis.ai/models/llama-3-2-instruct-70b">artificialanalysis.ai</a>)</td>
+                </tr>
+                <tr>
+                    <td>LLaMA 3.1 70B</td>
+                    <td>$0.65</td>
+                    <td>$0.85</td>
+                    <td>8K</td>
+                    <td>January 2025</td>
+                    <td>Standard model for various applications (<a href="https://artificialanalysis.ai/models/llama-3-1-instruct-70b">artificialanalysis.ai</a>)</td>
+                </tr>
+                <tr>
+                    <td>Mistral Large 2</td>
+                    <td>$2.00</td>
+                    <td>$6.00</td>
+                    <td>128K</td>
+                    <td>November 2024</td>
+                    <td>High-performance model with 123B parameters (<a href="https://artificialanalysis.ai/models/mistral-large-2">artificialanalysis.ai</a>)</td>
+                </tr>
+                <tr>
+                    <td>Mistral Mixtral 8x22B</td>
+                    <td>$2.00</td>
+                    <td>$6.00</td>
+                    <td>128K</td>
+                    <td>November 2024</td>
+                    <td>Sparse model with 141B parameters (<a href="https://mistral.ai/pricing">mistral.ai</a>)</td>
+                </tr>
+                <tr>
+                    <td>Mistral NeMo</td>
+                    <td>$0.15</td>
+                    <td>$0.15</td>
+                    <td>128K</td>
+                    <td>November 2024</td>
+                    <td>Specialized for code tasks (<a href="https://mistral.ai/pricing">mistral.ai</a>)</td>
+                </tr>
+                <tr>
+                    <td>Mistral Pixtral 12B</td>
+                    <td>$0.15</td>
+                    <td>$0.15</td>
+                    <td>128K</td>
+                    <td>November 2024</td>
+                    <td>Vision-capable small model (<a href="https://mistral.ai/pricing">mistral.ai</a>)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
